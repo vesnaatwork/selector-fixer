@@ -1,0 +1,78 @@
+================================================================================
+SELENIUM SELECTOR FIX REPORT
+================================================================================
+
+Total Selectors Analyzed: 7
+
+--------------------------------------------------------------------------------
+
+1. SELECTOR MAPPING
+--------------------------------------------------------------------------------
+Broken XPath:      /html/body/div[1]/div[2]/div[1]/form/div[1]/input
+Playwright Equiv:  #username
+Suggested XPath:   //input[@id='username']
+
+Reasoning: Use stable ID selector instead of absolute XPath
+
+
+2. SELECTOR MAPPING
+--------------------------------------------------------------------------------
+Broken XPath:      /html/body/div[1]/div[2]/div[1]/form/div[2]/input
+Playwright Equiv:  #password
+Suggested XPath:   //input[@id='password']
+
+Reasoning: Use stable ID selector instead of absolute XPath
+
+
+3. SELECTOR MAPPING
+--------------------------------------------------------------------------------
+Broken XPath:      /html/body/div[1]/div[2]/div[1]/form/div[3]/button
+Playwright Equiv:  button[type='submit']
+Suggested XPath:   //button[@type='submit']
+
+Reasoning: Use relative XPath with type attribute instead of absolute XPath
+
+
+4. SELECTOR MAPPING
+--------------------------------------------------------------------------------
+Broken XPath:      /html/body/div[1]/div[2]/div[1]/form/div[4]/span
+Playwright Equiv:  .error-message
+Suggested XPath:   //span[@class='error-message']
+
+Reasoning: Use class selector instead of index-based XPath
+
+
+5. SELECTOR MAPPING
+--------------------------------------------------------------------------------
+Broken XPath:      /html/body/div[1]/div[2]/div[1]/form/div[5]/a[1]
+Playwright Equiv:  [data-testid='forgot-password']
+Suggested XPath:   //a[@data-testid='forgot-password']
+
+Reasoning: Use data-testid attribute instead of position-based XPath
+
+
+6. SELECTOR MAPPING
+--------------------------------------------------------------------------------
+Broken XPath:      /html/body/div[1]/div[2]/div[1]/form/div[3]/label/input
+Playwright Equiv:  input[name='remember']
+Suggested XPath:   //input[@name='remember']
+
+Reasoning: Use name attribute instead of XPath
+
+
+7. SELECTOR MAPPING
+--------------------------------------------------------------------------------
+Broken XPath:      //div[@class='social-login']/button[1]
+Playwright Equiv:  [data-provider='google']
+Suggested XPath:   //button[@data-provider='google']
+
+Reasoning: Use data-provider attribute instead of position-based XPath
+
+
+================================================================================
+GENERAL RECOMMENDATIONS
+================================================================================
+• Use stable attributes like ID, name, or data-testid whenever possible.
+• Avoid absolute XPaths and use relative ones with meaningful attributes.
+• Consider using CSS selectors as an alternative to XPath.
+• Use text-based selectors where applicable.
