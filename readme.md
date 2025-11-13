@@ -4,7 +4,7 @@ Automatically fix broken Selenium XPath selectors using working Playwright tests
 
 ## Overview
 
-This tool uses Claude AI or Ollama to intelligently map working Playwright selectors to broken Selenium XPaths and suggests improved, more robust selectors.
+This tool uses Ollama to intelligently map working Playwright selectors to broken Selenium XPaths and suggests improved, more robust selectors.
 
 ## Features
 
